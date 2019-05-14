@@ -160,7 +160,6 @@ client-to-client
 {% endif %}
 
 {% if openvpn_use_pam %}
-client-cert-not-required
 plugin {{openvpn_use_pam_plugin|default(openvpn_use_pam_plugin_distribution)}} openvpn
 {% endif %}
 
